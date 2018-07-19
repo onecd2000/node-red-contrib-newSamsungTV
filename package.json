@@ -1,0 +1,26 @@
+{
+    "name": "node-red-contrib-newSamsungTV",
+    "version": "0.1.0",
+    "description": "This node gives access to a new smart models of samsung TVs",
+    "dependencies": {
+        "new-samsung-remote": "1.0.10"
+    },
+    "keywords": [
+        "node-red",
+        "TV",
+        "Smart",
+        "samsung"
+    ],
+    "node-red": {
+        "nodes": {
+            "newSamsungTV": "newSamsungTV.js"
+        }
+    },
+    "author": {
+        "name": "Yahya"
+    },
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/onecd2000/node-red-contrib-newSamsungTV"
+    }
+}
