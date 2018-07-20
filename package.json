@@ -1,5 +1,5 @@
 {
-    "name": "node-red-contrib-newSamsungTV",
+    "name": "node-red-contrib-newsamsungtv",
     "version": "0.1.0",
     "description": "This node gives access to a new smart models of samsung TVs",
     "dependencies": {
