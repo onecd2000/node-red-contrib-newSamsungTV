@@ -1,17 +1,17 @@
 <script type="text/javascript">
     RED.nodes.registerType('newSamsungTV',{
         category: "Media",
-        paletteLabel: "newSamsungTV",
+        paletteLabel: "SamsungTV Command",
         defaults: {
             ip: {value:"192.168.1.12", required:true},
             command: {value:""},
-			name: {value:"TV"}
+			name: {value:""}
         },
         inputs: 1,
         outputs: 1,
         icon: "tv.png",
         label: function() {
-            return this.name||"NewSamsungTV";
+            return this.name||"Command";
         },
         color: "#42bcf4"
     });
@@ -285,4 +285,44 @@
    <p>The code based on new samsung remote library by <a href="https://github.com/andrei10k">Andrei Stanciu</a></p>
    <p>The code also based on the greate work of <a href=https://github.com/FredThx">Fred Thx</a></p>
    <p>I hope you find this node helpful. Thank you</p>
+</script>
+
+
+
+<script type="text/javascript">
+    RED.nodes.registerType('new-samsung-tv-isalive',{
+        category: "Media",
+        paletteLabel: "Is Alive",
+        defaults: {
+            ip: {value:"192.168.1.182", required:true},
+			name: {value:""}
+        },
+        inputs: 1,
+		outputs: 2,
+		outputLabels: ["No","Yes"],
+        icon: "tv.png",
+        label: function() {
+            return this.name||"is Tv On";
+        },
+        color: "#42bcf4"
+    });
+</script>
+<script type="text/x-red" data-template-name="new-samsung-tv-isalive">
+    <div class="form-row">
+        <label for="node-input-name"><i class="fa fa-tag"></i> Name</label>
+        <input type="text" id="node-input-name" placeholder="Name">
+    </div>
+    
+    <br/>
+    
+    <div class="form-row">
+        <label for="node-input-ip"><i class="fa fa-tag"></i> IP</label>
+        <input type="text" id="node-input-ip" placeholder="xxx.xxx.xxx.xxx">
+    </div>
+    
+    
+    
+</script>
+<script type="text/x-red" data-help-name="new-samsung-tv-isalive">
+   <p>Node for cheking if the TV is On.</p>
 </script>
